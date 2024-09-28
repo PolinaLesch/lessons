@@ -1,0 +1,10 @@
+def test_function():
+    def inner_function():
+        print("Я в области видимости функции test_function")
+
+
+    result = inner_function() # Ничего не возвращает
+
+
+result1 = inner_function() # Выдает ошибку, так как не видит эту функцию
+result2 = test_function() # работает
